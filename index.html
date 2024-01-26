@@ -7,7 +7,7 @@
     <title>>Assistência técnica em Informática</title>
 </head>
 <body>
-    <img src="https://www.findup.com.br/wp-content/uploads/2022/09/close-up-hands-working-with-tools-1.jpg" height="300" width="450" onclick="mostra('Informatica');">
+    <img src="https://www.findup.com.br/wp-content/uploads/2022/09/close-up-hands-working-with-tools-1.jpg" height="300" width="450" onclick="mostra();">
     <h1>ASSISTÊNCIA TÉCNICA EM INFORMÁTICA</h1>
     <p>oferta serviços de manutenção e instalação de componentes eletrônicos, desde a recuperação de arquivos e instalação de programas até a formatação de computadores</p>
     <p>trabalhamos com os seguintes serviços:</p>
@@ -17,5 +17,19 @@
         <li>Venda de peças de informática</li>
         <li>Suporte ao cliente</li>
     </ul>
+    <p id="cont">0</p>
+    <script>
+        var contador = 0;
+
+        function exibir(){
+            alert("Funcionou!!!!");
+        }
+
+        function mostra() {
+            contador +=1
+            document.getElementById('cont').innerHTML = "Cliques na imagem: "+contador;
+
+        }
+    </script>
 </body>
 </html>
